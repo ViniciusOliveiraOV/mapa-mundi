@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build artifacts
+build/
+**/build/
+backend/build/
+
+# Compiled addon
+*.node
+
+# Visual Studio / MSBuild
+.vs/
+*.sln
+*.vcxproj*
+*.vcproj*
+*.user
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temp files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Misc
+dist/
+coverage/
+*.tgz
+*.log
+
+# Keep package-lock if desired (remove this line to ignore)
+# package-lock.json
