@@ -55,3 +55,36 @@ Sinta-se à vontade para abrir issues ou enviar PRs.
 ---
 
 Arquivo gerado automaticamente: README em português (pt-br). Ajuste conforme necessário.
+
+## Frontend - como rodar localmente (sugestão)
+
+O frontend está em `frontend/` e contém um esqueleto React que carrega um GeoJSON simplificado.
+
+Recomendo usar Vite para desenvolvimento rápido. Exemplo de passos:
+
+1. No diretório `frontend`, execute:
+
+```powershell
+npm init vite@latest . -- --template react
+npm install
+npm install d3
+```
+
+2. Copie os arquivos do diretório `frontend/src` existentes no repo (App.jsx, components) e rode:
+
+```powershell
+npm run dev
+```
+
+O App carregará `frontend/data/world-simplified.geo.json` e mostrará o mapa básico; clique em um país para abrir o modal com dados carregados via REST Countries.
+
+## Rodando o frontend em modo desenvolvimento
+
+No diretório `frontend` execute:
+
+```powershell
+npm install
+npm run dev
+```
+
+Isso iniciará o servidor de desenvolvimento do Vite (por padrão na porta 5173). O app carrega `frontend/data/world-simplified.geo.json` para funcionar offline.
